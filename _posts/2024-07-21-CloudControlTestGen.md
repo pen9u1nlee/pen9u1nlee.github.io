@@ -7,9 +7,9 @@ aside:
   toc: true
 ---
 
-<!--more-->
-
 > 这是同济大学做的一个封闭测试平台以及实际测试场景，用于高效产生智能网联汽车的长尾场景（例如车祸、鬼探头）及数据。
+
+<!--more-->
 
 ![alt text](/img/2024-07-21-CloudControlTestGen/image.png)
 
