@@ -7,9 +7,9 @@ aside:
   toc: true
 ---
 
-> 这篇文章主要介绍LattiGo团队搞出来的一个<a href=https://eprint.iacr.org/2020/304>多方同态加密的工作</a>。这篇工作个人觉得比较优雅，而且有<a href=https://github.com/tuneinsight/lattigo>开源库方便把玩</a>，所以记一下。
-
 <!--more-->
+
+> 这篇文章主要介绍LattiGo团队搞出来的一个[多方同态加密的工作](https://eprint.iacr.org/2020/304)。这篇工作个人觉得比较优雅，而且有[开源库方便把玩](https://github.com/tuneinsight/lattigo)，所以记一下。
 
 # 简介和亮点
 
@@ -19,9 +19,11 @@ aside:
 
 可以基于上述私钥拆分的想法设计一些有趣的多方解密/自举方案。
 
-# 预备知识：CKKS同态加密方案的简介
+# 预备知识
 
-略。原帖（作者为本人）放置在<a href=https://blog.csdn.net/weixin_43466027/article/details/118792866>CSDN</a>上，不日将scp至本站。
+阅读此篇博客，需要对CKKS同态加密方案有一定的了解。不巧的是，窝写过CKKS方案的简介，原帖（作者为本人）放置在[CSDN](https://blog.csdn.net/weixin_43466027/article/details/118792866)上，不日将scp至本站。
+
+CSDN的内容将持续保留（低情商：刷访问量）。
 
 # LattiGo的多方CKKS方案
 
