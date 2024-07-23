@@ -1,4 +1,11 @@
-# 自动驾驶的技术演进与挑战
+---
+title: 自动驾驶的技术演进与挑战
+tags: 云控制系统
+pageview: false
+modify_date: 2024-07-23
+aside:
+  toc: true
+---
 
 ## 自动驾驶的演进路线
 
