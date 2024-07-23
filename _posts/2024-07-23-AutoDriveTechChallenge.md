@@ -7,6 +7,8 @@ aside:
   toc: true
 ---
 
+<!--more-->
+
 ## 自动驾驶的演进路线
 
 ![alt text](/img/2024-07-23-AutoDriveTechChallenge/image-33.png)
