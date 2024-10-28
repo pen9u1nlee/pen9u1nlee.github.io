@@ -92,3 +92,40 @@ sudo vim /etc/ld.so.conf.d/opencv.conf
 sudo ldconfig -v
 
 https://blog.csdn.net/fuhanghang/article/details/130206203
+
+问题主要集中在opencv的适配、rtabmap编译报错、ros启动即挂三个方面。
+
+opencv主要显示的是包的匹配问题。比如装了ABC版本，想让它用A版本却用了B版本，以及找不到适配的头文件。
+
+https://cloud.tencent.com/developer/article/1759523
+
+https://immortalqx.github.io/2021/07/06/opencv-notes-0/
+
+在一台机器上安装多个opencv（不同版本），可以在自己安装时指定不同的目录，然后在~/.bashrc文件里指定不同的参数：
+export PKG_CONFIG_PATH=/usr/local/opencv_2.4.9/lib/pkgconfig
+export LD_LIBRARY_PATH=/usr/local/opencv_2.4.9/lib
+
+如果想安装到别的地方，可以指定cmake的参数：-D CMAKE_INSTALL_PREFIX=/usr/local/opencv_2.4.9。
+
+在ROS中如何适配不同的opencv版本？
+
+ros启动即挂需要使用ros的debug模式。
+
+# linux动态链接库相关
+
+查看动态链接库的命令：
+```sh
+ldd <bin-name>
+ldd gdbserver
+
+readelf -a <bin-name>|grep library
+```
+
+查看动态链接库符号（包括变量名、）的命令：
+```sh
+nm -n <name> | grep xxx
+```
+
+
+
+注意事项：动态链接库的调用前提要设置好环境变量？
