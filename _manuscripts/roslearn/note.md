@@ -103,3 +103,49 @@ python的程序单独在包里建一个scripts目录存放？
 
 # 服务的client端编程实现
 
+# 服务数据的定义和使用
+
+![alt text](image-13.png)
+
+![alt text](image-14.png)
+
+srv文件通过---区分request和response。
+
+![alt text](image-15.png)
+
+配置客户端服务器的cmake规则：
+
+![alt text](image-16.png)
+
+roscore中可能会存有旧的数据，因此在启动新程序之前，建议杀掉重启。
+
+# 参数的使用和编程方法
+
+![alt text](image-17.png)
+
+```sh
+catkin_create_pkg <package-name> <pkg-depend>
+```
+
+![alt text](image-18.png)
+
+# 坐标系管理系统
+
+机器人的坐标变换：
+
+![alt text](image-19.png)
+
+如何描述任意两个坐标系之间的关系？
+
+![alt text](image-20.png)
+
+可以查询10s内的坐标变换关系。
+
+后台会维护TF Tree，所有坐标系都保存于其中。
+
+![alt text](image-21.png)
+
+比如上图的相对坐标可以直接通过tf进行获取而无需计算。
+
+![alt text](image-22.png)
+
