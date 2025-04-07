@@ -2,7 +2,7 @@
 title: ScienceRobotics观点文章：未来的无人海洋作业任务，正在从独狼模式变成群狼模式
 tags: 云控制系统
 pageview: false
-modify_date: 2025-04-106
+modify_date: 2025-04-06
 aside:
   toc: true
 ---
