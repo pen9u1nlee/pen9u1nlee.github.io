@@ -155,6 +155,10 @@ if __name__ == "__main__":
     asyncio.run(main())
 ```
 
+把玩效果如下：
+
+![alt text](/img/2025-04-08-SemanticKernel/image-5.png)
+
 ## 内核
 
 内核是 Semantic Kernel 的核心组件，负责管理运行 AI 应用程序所需的所有服务和插件。
